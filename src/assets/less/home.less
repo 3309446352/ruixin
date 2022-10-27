@@ -1,0 +1,118 @@
+.home{
+    .home-nav{
+        display: flex;
+        height: 62px;
+        line-height: 63px;
+        overflow: hidden;
+        .t1,
+        .t2{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .t2{
+            width: 50px;
+            color: #00f;
+            margin-right: 5px;
+        }
+    }
+     .home-search .van-icon{
+        color: #00adb5;
+    }
+     .home-search{
+        overflow: hidden;
+        padding: 0;
+        border-radius: 17px;
+        top: -1px;
+    }
+    .van-nav-bar__right{
+        overflow: hidden !important;
+    }
+    .home-conten{
+        padding: 10px;
+        .banner-box{
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+    .product-box{
+        padding: 20px;
+        .pro-title-box{
+            background-color: #fff;
+            padding: 10px 0px;
+            .pro-title{
+                display: inline-block;
+                background-color: #00adb5;
+                color: #fff;
+                height: 32px;
+                line-height: 32px;
+                font-size: 14px;
+                padding: 0 15px;
+                border-top-right-radius: 17px ;
+            }
+        }
+        .product{
+            margin-top: 10px;
+            .pro-item{
+                width: 135px; //计算途径
+                background-color: #fff;
+                padding: 10px;
+                background-color: 8px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                // 定符
+                &:nth-chlid(2n){
+                    margin-right: 0px;
+                }
+                .img-box{
+                    border-radius: 8px;
+                    overflow: hidden;
+                    position: relative;
+                    .hot{
+                        position: absolute;
+                        top: 0;
+                        left: 8px;
+                        width: 24px;
+                        height: 24px;
+                        text-align: center;
+                        line-height: 24px;
+                        color: #fff;
+                        background-color: #00adb5;
+                        font-size: 12px;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+                .pro-info{
+                    margin-top: 10px;
+                    .pro-name{
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+                    .pro-enname{
+                        color: #999;
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                    }
+                    .pro-price{
+                        color: #00adb5;
+                        font-weight: bold;
+                        margin-bottom: 16px; 
+                    }
+                }
+            }
+        }
+    }
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::before,
+.clearfix::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}

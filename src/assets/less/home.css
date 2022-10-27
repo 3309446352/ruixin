@@ -1,0 +1,114 @@
+.home .home-nav {
+  display: flex;
+  height: 62px;
+  line-height: 63px;
+  overflow: hidden;
+}
+.home .home-nav .t1,
+.home .home-nav .t2 {
+  font-weight: bold;
+  font-size: 12px;
+}
+.home .home-nav .t2 {
+  width: 50px;
+  color: #00f;
+  margin-right: 5px;
+}
+.home .home-search .van-icon {
+  color: #00adb5;
+}
+.home .home-search {
+  overflow: hidden;
+  padding: 0;
+  border-radius: 17px;
+  top: -1px;
+}
+.home .van-nav-bar__right {
+  overflow: hidden !important;
+}
+.home .home-conten {
+  padding: 10px;
+}
+.home .home-conten .banner-box {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.home .product-box {
+  padding: 20px;
+}
+.home .product-box .pro-title-box {
+  background-color: #fff;
+  padding: 10px 0px;
+}
+.home .product-box .pro-title-box .pro-title {
+  display: inline-block;
+  background-color: #00adb5;
+  color: #fff;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  padding: 0 15px;
+  border-top-right-radius: 17px ;
+}
+.home .product-box .product {
+  margin-top: 10px;
+}
+.home .product-box .product .pro-item {
+  width: 135px;
+  background-color: #fff;
+  padding: 10px;
+  background-color: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.home .product-box .product .pro-item:nth-chlid(2n) {
+  margin-right: 0px;
+}
+.home .product-box .product .pro-item .img-box {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.home .product-box .product .pro-item .img-box .hot {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  background-color: #00adb5;
+  font-size: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.home .product-box .product .pro-item .pro-info {
+  margin-top: 10px;
+}
+.home .product-box .product .pro-item .pro-info .pro-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.home .product-box .product .pro-item .pro-info .pro-enname {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.home .product-box .product .pro-item .pro-info .pro-price {
+  color: #00adb5;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
