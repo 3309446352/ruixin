@@ -1,6 +1,6 @@
 u<template>
   <div id="app">
-      <router-view/>
+      <router-view></router-view>
   </div>
 
 </template>
@@ -36,6 +36,7 @@ body{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  
 }
 
 

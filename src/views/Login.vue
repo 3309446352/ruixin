@@ -61,11 +61,13 @@
             };
         },
         methods: {
+            //忘记密码
             toForget() {
                 this.$router.push({
                     name: "Forget",
                 });
             },
+
             showPopup() {
                 this.show = true;
             },

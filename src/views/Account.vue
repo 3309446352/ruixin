@@ -8,6 +8,7 @@
             <div class="user-img fr">
               <img :src="accountInfo.userImg" alt="">
               <van-uploader :after-read="uploadUserImg" class="upload-box" />
+
             </div>
           </div>
         </van-cell>
@@ -47,7 +48,7 @@ export default {
         desc: '',
         phone: '',
         userId: '',
-        desc: ''
+
         // ,msg:'hello'
       },
     };

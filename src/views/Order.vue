@@ -48,7 +48,6 @@ export default {
             // 激活tab标签的下标
             tabIndex: 0,
             tabData: [{ title: "全部" }, { title: "进行中" }, { title: "已完成" }],
-
             // 订单商品数据
             orderData: [],
             // 全部没有订单的数据

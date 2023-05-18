@@ -1,29 +1,28 @@
 <template>
-      <div class="my">
-            <div class="my-bg" v-if="userInfo.userBg" :style="{backgroundImage:`url('${userInfo.userBg}')`}">
-                  <van-uploader class="upload-box" :after-read="uploadBg" style="width:100%;height:200px;color: aqua;">
+    <div class="my">
+        <div class="my-bg" v-if="userInfo.userBg" :style="{ backgroundImage: `url('${userInfo.userBg}')` }">
+            <van-uploader class="upload-box" :after-read="uploadBg" style="width:100%;height:200px;color: aqua;">
             </van-uploader>
-                </div>
-            <div class="my-info">
-                  <div class="clearfix">
-                        <div class="my-img fl">
-                             
-                            <!-- 用户头像 -->
-                              <img :src="userInfo.userImg" v-if="userInfo.userBg" alt="" class="auto-img" />
-                           
-                </div>
-                        <div class="my-info-box fl">
-                              <div class="user-name">{{ userInfo.nickName }}</div>
-                              <div class="user-desc">{{ userInfo.desc == '' ? "这个家伙很懒什么都没留下" :userInfo.desc }}</div>
-                            </div>
-                      </div>
-                </div>
-            <div class="list-box">                
-            <van-cell v-for="(item, index) in listData" :key="index" :title="item.title" is-link
-                @click="goPage(item.name)" />               
         </div>
-          </div>
-
+        <div class="my-info">
+            <div class="clearfix">
+                <div class="my-img fl">
+                    <!-- 用户头像 -->
+                    <img :src="userInfo.userImg" v-if="userInfo.userBg" alt="" class="auto-img" />
+                </div>
+                <div class="my-info-box fl">
+                    <div class="user-name">{{ userInfo.nickName }}</div>
+                    <div class="user-desc">{{ userInfo.desc == '' ? "这个家伙很懒什么都没留下" : userInfo.desc }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="list-box">
+            <van-cell v-for="(item, index) in listData" :key="index" :title="item.title" is-link
+                @click="goPage(item.name)" />
+         
+        </div>
+        <van-button type="warning" round block class="logout" @click="logout">退出登录</van-button>
+    </div>
 </template>
 
 <script>
@@ -32,22 +31,23 @@ export default {
     data() {
         return {
             listData:
-                [
-                    { title: '个人资料', name: 'Account', },
-                    { title: '我的订单', name: 'Order', },
-                    { title: '我的收藏', name: 'Like', },
-                    { title: '我的足迹', name: 'Track', },
-                    { title: '地址管理', name: 'Address', },
-                    { title: '安全中心', name: 'Secure', },
-                ],
+            [
+                { title: '个人资料', name: 'Account', },
+                { title: '我的订单', name: 'Order', },
+                { title: '我的收藏', name: 'Like', },
+                { title: '我的足迹', name: 'Track', },
+                { title: '地址管理', name: 'Address', },
+                { title: '安全中心', name: 'Secure', },
+            ],
             userInfo: {}
         };
     },
     created() {
         this.getUserInfo();
-        // this.$router.push({path:"/My"})
+        this.$router.push({path:"/My"})
     },
     methods: {
+        //获取个人资料
         getUserInfo() {
             let tokenString = localStorage.getItem('token');
             if (!tokenString) {
@@ -80,6 +80,7 @@ export default {
                     this.$toast.clear();
                 });
         },
+        //跳转页面
         uploadBg(file) {
             let type = ["gif", "png", "jpg", "jpeg"];
             let size = 1;

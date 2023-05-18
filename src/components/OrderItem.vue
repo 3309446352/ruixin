@@ -56,8 +56,8 @@ export default {
 .pro-info-box {
     position: relative;
     
-    // background-color: aqua;        
-    定符 &:nth-chlid(2n) {
+    // background-color: aqua;定符
+     &:nth-chlid(2n) {
         margin-right: 0px;
     }
 
