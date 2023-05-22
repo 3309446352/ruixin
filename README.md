@@ -1,19 +1,8 @@
 # rx
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## [README.md](https://github.com/3309446352/ruixin#readme)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 💻 vue项目
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+主要运用vue2.0全家桶 axios搭建瑞幸咖啡前端界
